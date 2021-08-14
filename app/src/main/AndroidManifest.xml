@@ -9,30 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UAS_AKB_10118323">
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAfOmruvQ2C5ogfirrAWXDa-OkCXjlJHbk" />
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAfOmruvQ2C5ogfirrAWXDa-OkCXjlJHbk" />
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts" />
         <activity android:name=".View.Activity.DetailActivity" android:screenOrientation="portrait"></activity>
         <activity android:name=".View.Activity.DetailDestinasiActivity" android:screenOrientation="portrait"/>
-        <activity
-            android:name=".View.Activity.GetStartedActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".View.Fragment.SplashScreenActivity"
-            android:screenOrientation="portrait">
+        <activity android:name=".View.Activity.GetStartedActivity" android:screenOrientation="portrait" />
+        <activity android:name=".View.Activity.MainActivity" android:screenOrientation="portrait" />
+        <activity android:name=".View.Activity.SplashScreenActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".View.Activity.MainActivity"
-            android:screenOrientation="portrait" />
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

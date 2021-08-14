@@ -1,5 +1,5 @@
 //10 Agustus 2021 - 10118323 - Riffa Alfaridzi Priatna - IF8
-package com.example.uas_akb_10118323.View.Fragment;
+package com.example.uas_akb_10118323.View.Activity;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +12,6 @@ import android.os.Handler;
 import android.view.View;
 
 import com.example.uas_akb_10118323.R;
-import com.example.uas_akb_10118323.View.Activity.GetStartedActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
