@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image_viewpager"
+        android:layout_centerInParent="true"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:src="@drawable/ic_welcome"/>
+    <TextView
+        android:id="@+id/text_viewpager"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image_viewpager"
+        android:text="TEXT"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

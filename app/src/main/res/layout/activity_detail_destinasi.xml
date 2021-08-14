@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.DetailDestinasiActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:innerRadius="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="49sp"
+        android:shape="ring"
+        app:cardElevation="5sp"
+        app:cardCornerRadius="75dp">
+        <LinearLayout
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@drawable/circle"
+            android:gravity="center">
+            <ProgressBar
+                android:id="@+id/pbLoading"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                style="?android:attr/progressBarStyle"
+                android:indeterminateTint="@color/primary"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:fontFamily="@font/roboto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destinasi"
+        android:textSize="17sp"
+        android:textColor="@color/primary"
+        android:paddingLeft="70sp"
+        android:paddingTop="10sp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvJudul"
+        android:layout_marginTop="15sp"
+        android:background="@color/line"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDestinasi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="49sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
