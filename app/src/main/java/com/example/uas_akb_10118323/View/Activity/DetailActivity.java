@@ -45,6 +45,8 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setStatusBarColor(Color.WHITE);
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         setContentView(R.layout.activity_detail);
         init();
@@ -109,7 +111,7 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
     public void onMapReady(@NonNull GoogleMap googleMap) {
         map = googleMap;
         LatLng latLng = new LatLng(this.latLng.latitude, this.latLng.longitude);
-        map.addMarker(new MarkerOptions().position(latLng).title("Coba"));
+        map.addMarker(new MarkerOptions().position(latLng).title(String.valueOf(tvDestinasi.getText())));
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15f));
     }
 }

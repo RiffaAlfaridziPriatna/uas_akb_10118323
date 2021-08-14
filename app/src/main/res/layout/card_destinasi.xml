@@ -37,14 +37,17 @@
                 app:layout_constraintBottom_toBottomOf="parent"/>
             <TextView
                 android:id="@+id/tvJudul"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Wisata"
                 android:fontFamily="@font/roboto"
                 android:textColor="@color/black"
                 android:textSize="15sp"
+                android:ellipsize="end"
+                android:singleLine="true"
                 android:layout_marginTop="15sp"
-                android:layout_marginLeft="15sp"
+                android:layout_marginLeft="115sp"
+                android:layout_marginRight="15sp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/ivGambar"/>
             <androidx.appcompat.widget.AppCompatRatingBar
