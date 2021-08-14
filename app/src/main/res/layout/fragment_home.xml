@@ -55,8 +55,23 @@
                     android:backgroundTint="@android:color/transparent"
                     app:tabBackground="@drawable/custom_tab_banner"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </LinearLayout>
 
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/roboto"-->
+<!--                android:textColor="@color/primary"-->
+<!--                android:layout_marginTop="20sp"-->
+<!--                android:layout_marginLeft="25sp"-->
+<!--                android:textSize="14sp"-->
+<!--                android:text="Welcome to Explore Bandung Raya"/>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+        </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
